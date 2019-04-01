@@ -1,0 +1,51 @@
+<mvc:View controllerName="xml.XMLMODEL.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					
+<Table id="idProductsTable"
+          mode="SingleSelectMaster"
+          selectionChange="onSelectionChange"
+          items="{/Rowset/0/Row}"
+          class="TableStyle">
+    <headerToolbar>
+        <Toolbar>
+            <ToolbarSpacer />
+            <Button text="Insert Item" type="Emphasized" press="onInsert" />
+            <Button text="Edit Item" type="Emphasized" press="onEdit" />
+            <Button text="Save Item" type="Emphasized" press="onSave" />
+            <Button text="Delete Item" type="Reject" press="onDelete" />
+        </Toolbar>
+    </headerToolbar>
+    <columns>
+        <Column>
+            <Label text="ID" />
+        </Column>
+        <Column>
+            <Label text="Product" />
+        </Column>
+        <Column>
+            <Label text="Category" />
+        </Column>
+        <Column>
+            <Label text="WeightMeasure" />
+        </Column>
+    </columns>
+    <items>
+        <ColumnListItem>
+            <cells>
+                <Input value="{ProductId}" editable="false" class="InputStyle" />
+                <Input value="{Name}" editable="false" class="InputStyle" />
+                <Input value="{Category}" editable="false" class="InputStyle" />
+                <Input value="{WeightMeasure}" editable="false" class="InputStyle" />
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
