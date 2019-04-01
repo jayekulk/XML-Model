@@ -13,7 +13,7 @@
     <headerToolbar>
         <Toolbar>
             <ToolbarSpacer />
-            <Button text="Insert Item" type="Emphasized" press="onInsert" />
+            <Button text="Insert Item test" type="Emphasized" press="onInsert" />
             <Button text="Edit Item" type="Emphasized" press="onEdit" />
             <Button text="Save Item" type="Emphasized" press="onSave" />
             <Button text="Delete Item" type="Reject" press="onDelete" />
